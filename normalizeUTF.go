@@ -6,7 +6,7 @@ import (
 )
 
 //NormalizeUTF converts input string to output string by substituting all instances of NFD Unicode character n-tuples with canonically equivalent NFC forms, where available.
-func NormalizeUTF(input string) (normalized string) {
+func NormalizeUTF(input string) (output string) {
 	normalizer := transform.Chain(norm.NFC)
 	// normalizer := transform.Chain(norm.NFC)
 	// normalizer := transform.Chain(norm.NFD, runes.Remove(runes.In(unicode.Mn)), norm.NFC)
