@@ -5,7 +5,8 @@ import (
 	"log"
 )
 
-func readFile(infile string) (output string) {
+// ReadFile returns content of a file.
+func ReadFile(infile string) (output string) {
 	content, err := ioutil.ReadFile(infile)
 	if err != nil {
 		log.Fatal(err)

@@ -5,7 +5,8 @@ import (
 	"unicode"
 )
 
-func cleanText(input string) (output string) {
+// CleanText removes non-printing and non-space characters from input.
+func CleanText(input string) (output string) {
 
 	//fmt.Println(len(invisibleChars))
 

@@ -6,9 +6,8 @@ import (
 	"log"
 )
 
-// Not tested and not used at the moment.
-
-func writeFile(contentString string) {
+//WriteFile is not tested and not used at the moment.
+func WriteFile(contentString string) {
 
 	// Get byte data to write to file.
 	dataString := contentString
